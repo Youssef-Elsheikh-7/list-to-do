@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List To Do</title>
+    <link rel="icon" href="./icon.jpg" />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <script></script>
+    <style>
+      body{
+        text-align: center;
+        margin-top: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .form{
+        background-color: #ddd;
+        width: fit-content;
+        display: block;
+        margin: 10px auto;
+        padding: 30px;
+        width: 620px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+      }
+      .input_task{
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        border: 1px solid #999;
+        width: 350px;
+        font-size: 19px;
+      }
+      .input_task:focus{
+        outline: none;
+      }
+      .create_task{
+        padding: 10px 15px;
+        border: none;
+        background-color: #fe5447;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .tasks{
+        background-color: #ddd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        width: 620px;
+        border-radius: 10px;
+        margin: auto;
+      }
+      .task{
+        background-color: #fff;
+        width: 90%;
+        margin: 10px;
+        font-size: 22px;
+        text-align: left;
+        padding: 5px 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .delete{
+        background-color: #ff0000;
+        border: none;
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .remove-all{
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+        background-color: red;
+        color: #fff;
+        border-radius: 8px;
+        margin: 25px auto;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <input type="text" class="input_task">
+      <input class="create_task" type="submit" value="Add Task"/>
+    </div>
+    <div class="tasks"></div>
+    <button class="remove-all">Remove All <i class="fas fa-trash-can"></i></button>
+    <script src="./js/BOM_Challenge_List_To_Do.js"></script>
+  </body>
+</html>
